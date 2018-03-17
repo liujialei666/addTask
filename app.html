@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello task</title>
+    <link rel="stylesheet" href="css/app-task.css" type="text/css">
+    <link rel="stylesheet" href="datetimepicker-master/build/jquery.datetimepicker.min.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/store.js"></script>
+    <script type="text/javascript" src="datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
+    <script type="text/javascript" src="js/app-baseTask.js"></script>
+</head>
+<body>
+    <audio id="audio" loop>
+        <source src="audio/alert.mp3 " type="audio/mpeg">
+    </audio>
+    <div class="remindmessage">
+        <p class="remindtitle"></p>
+        <span class="remindcontent">知道了</span>
+    </div>
+    <div class="container">
+        <h1>My todo</h1>
+        <div class="listMask">
+            <div class="addTask">
+                <form action="">
+                    <input type="text" name="thisval" placeholder="eg.input your mask" autofocus autocomplete="off">
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+            <div class="task-list">
+            </div>
+            <div class="task-mask"></div>
+            <div class="task-detail">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

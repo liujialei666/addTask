@@ -1,0 +1,191 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+body
+{
+    background-color:#60888b;
+    color: #fff;
+}
+.confirmcontent button:hover
+{
+    cursor: pointer;
+}
+.remindmessage
+{
+    background-color: #00dd1c;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    display: none;
+}
+.remindmessage .remindtitle
+{
+    font-size: 20px;
+    color: #0e0e0e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.remindmessage .remindcontent
+{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007fff;
+    margin-bottom: 20px;
+}
+.container
+{
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+.container h1
+{
+    text-align:center;
+    margin-bottom: 10px;
+}
+.container .listMask
+{
+    position: relative;
+}
+.container .addTask input[type=text]
+{
+    width: 80%;
+    padding:10px;
+    border: 0;
+    border-radius:3px;
+    outline: 0;
+}
+.container .addTask button
+{
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 3px;
+    background: #46b1e4e6;
+    cursor: pointer;
+    width: 16%;
+    transition:background .2s;
+    font-size: 18px;
+    color:#fff;
+}
+.container .addTask button:hover
+{
+    background: #46b1e4;
+}
+.container .task-list
+{
+    margin-top: 10px;
+}
+.container .task-list .task-item
+{
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    border-radius:3px;
+    box-shadow:0 2px 3px rgba(0,0,0,.2);
+    transition:background .1s;
+    position: relative;
+}
+.container .task-list .task-item.compelete
+{
+    background-color: #ccc;
+}
+.container .task-list .task-item.compelete:after
+{
+    content: "";
+    display: block;
+    width: 97%;
+    height: 1px;
+    background-color: #bbb;
+    position: absolute;
+    top: 21px;
+    left: 24px;
+}
+.container .task-list .task-item .fr
+{
+    float:right;
+}
+.container .task-list .task-item .anchor
+{
+    color: #888;
+}
+.container .task-list .task-item .anchor:hover
+ {
+     color:#333;
+    cursor: pointer;
+ }
+.container .task-list .task-item .item-content
+{
+    margin-left: 10px;
+}
+.container .task-mask
+{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background: rgba(30,30,30,.6);
+    display: none;
+}
+.container .task-detail
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    background: #fff;
+    width: 50%;
+    height:256px;
+    padding: 0 10px 10px 10px;
+    box-sizing: border-box;
+    color:#333;
+    font-weight: bold;
+    display: none;
+}
+.container .task-detail .task-content
+{
+    padding: 10px;
+}
+.container .task-detail input[type=text]
+{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:3px;
+    margin:10px 0;
+    outline:0;
+}
+.container .task-detail .task-dec textarea
+{
+    width:100%;
+    max-height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: 0;
+}
+.container .task-detail .remind input[type=date]
+{
+    width: 100%;
+    background-color: #ddd;
+    border: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:3px;
+    margin:10px 0;
+}
+.container .task-detail .remind button
+{
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius:3px;
+    border: 0;
+    outline: 0;
+    cursor:pointer;
+}
+.container .task-detail .remind button:hover
+{
+    background-color: #aaa;
+}
